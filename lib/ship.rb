@@ -9,7 +9,11 @@ class Ship
   end
 
   def valid_coordinates?
-    size == coordinate_range.size ? true : false
+    if size == coordinate_range.size
+      true
+    else
+      false
+    end
   end
 
   private def construct_coordinates
@@ -26,4 +30,7 @@ class Ship
       sorted
     end
   end
+
+
+
 end
